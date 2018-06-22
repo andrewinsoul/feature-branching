@@ -1,0 +1,2 @@
+<h1 align='center'> Simple Shopping Calculator UI</h1>
+This is a simple ui built with html, css and js which acts as a shopping cart displaying your total expenses as well as purchased items. preview at the codepen <a href='codepen.io/andyjs'>link</a>
