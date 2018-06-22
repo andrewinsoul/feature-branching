@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./calculatorStyles.css"/>
+    <script src="./calculatorScript.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <h4>Shopping Calculator</h4>
+    </nav>
+    <div class="jumbotron bg-dark">
+      <div class="jumbotron-div">
+        <div class="form-group">
+          <label class="label-txt" for="itemName">Name of Item:</label>
+          <input id="itemName" class="form-control col-10" placeholder="Name of Item" name="itemName"/>
+        </div>
+        <div class="form-group">
+          <label class="label-txt" for="itemQty">Quantity of Item:</label>
+          <input id="itemQty" class="form-control col-10" placeholder="Quantity of Item" name="itemQty"/>
+        </div>
+        <div class="form-group">
+          <label class="label-txt" for="itemPrice">Price of Item:</label>
+          <input id="itemPrice" class="form-control col-10" placeholder="Price of Item" name="itemPrice"/>
+        </div>
+        <button id="calc-btn" class="btn btn-primary">Add Item</button>
+        <button id="clear-btn" class="btn btn-danger">clear</button>
+      </div>
+    </div>
+    <div id="total" class="col">
+      CURRENT TOTAL: 0  
+    </div>
+    <div class="row">
+      <table id="itemTable">
+        <tr id="header">
+          <th>S/N</th>
+          <th scope="col">Name of Item</th>
+          <th scope="col">Quantity of Item</th>
+          <th scope="col">Price of Item</th>
+        </tr>
+      </table>
+    </div>
+    <div class="author">
+      This simple UI simply keeps track of your shopping cart displaying items purchased as well as display the total price. Designed by O.D.K @ andela
+    </div>
+  </body>
+</html>
