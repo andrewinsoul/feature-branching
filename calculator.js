@@ -17,7 +17,7 @@ window.onload = function () {
     let itemName = document.getElementById('itemName').value;
     let itemQty = document.getElementById('itemQty').value;
     let itemPrice = document.getElementById('itemPrice').value;
-    if (itemName === '' || itemName.match(' ')) {
+    if (!itemName.replace(/\s/g, '').length) {
       alert('please fill entry for the item name');
       return 1;
     }
@@ -58,9 +58,6 @@ window.onload = function () {
   function clearCalculator() {
     sumTotal = 0;
     let table = document.getElementById('itemTable');
-    // for (let i = table.rows.length - 1; i > 0; i--) {
-    //  table.deleteRow(i);
-    // }
     let numberOfRow = table.rows.length
     for (let i = 1; i < numberOfRow; i++) {
       table.deleteRow(1);
@@ -73,6 +70,3 @@ window.onload = function () {
   const clearBtn = document.getElementById('clear-btn');
   clearBtn.addEventListener("click", clearCalculator, false);
 }
-/*
-using the method above, the script can be loaded in the head section and the DOM structure of the page will be pulled in, another method of acheiving this result is by calling the script just before the closing body tag instead of the head tag
-*/
