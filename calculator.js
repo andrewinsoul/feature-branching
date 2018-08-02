@@ -70,3 +70,4 @@ window.onload = function () {
   const clearBtn = document.getElementById('clear-btn');
   clearBtn.addEventListener("click", clearCalculator, false);
 }
+console.log('i love Jesus');
